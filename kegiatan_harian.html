@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi - Aktivitas Sehari-Hari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 1rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h1, h2 {
+            color: #2563eb;
+        }
+
+.banner h1 {
+    color: white;
+}
+
+        .banner {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .content-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #d1d5db;
+            margin: 1.5rem 0;
+        }
+        strong {
+            font-weight: bold;
+            color: #1f2937;
+        }
+        em {
+            font-style: italic;
+            color: #6b7280;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .audio-container {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .audio-icon {
+            width: 50px;
+            height: 50px;
+            background: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link-item {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.3s;
+            border-left: 4px solid #2563eb;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .link-item:hover {
+            background: #e2e8f0;
+        }
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Website Pribadi Saya</div>
+            <ul class="nav-links">
+                <li><a href="#home">Keseharian</a></li>
+                <li><a href="#gallery">Foto</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#audio">Suara</a></li>
+                <li><a href="#links">Tautan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="banner">
+            <h1>Selamat Datang di Website Pribadi Saya</h1>
+            <p>Cerita tentang aktivitas dan rutinitas sehari-hari saya.</p>
+        </section>
+
+        <section id="text" class="content-card">
+            <h2>Aktivitas Harian Saya</h2>
+            <p>
+                <strong>Pagi hari</strong> biasanya saya bangun pukul 04.30. Aktivitas pertama adalah 
+                <em>Sholat Shubuh</em> Setelah itu saya mandi dan bersiap-siap untuk mengantarkan adik saya berangkat sekolah kemudian berangkat menuju kampus.
+            </p>
+            
+            <hr>
+            
+            <p>
+                <strong>Siang hari</strong> saya isi dengan belajar di kampus dan bersilaturahmi bersama teman di kantin. Saya selalu mencoba 
+                <em>mengatur waktu dengan baik</em> antara bersilaturahmi dan pengembangan skill baru, seperti membaca buku atau melakukan praktik setelah kelas.
+            </p>
+            
+            <hr>
+            
+            <p>
+                <strong>Sore hingga malam</strong> adalah waktu untuk bekerja dan bersantai, <em>menghabiskan waktu 
+                dengan keluarga dan mengajar serta mempersiapkan rencana untuk hari berikutnya</em>. Kadang saya menonton film atau memasak makanan favorit.
+            </p>
+        </section>
+
+        <section id="gallery" class="content-card">
+            <h2>Galeri Foto Aktivitas</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="c:\Users\dell\OneDrive\Desktop\pemrograman web 1 tugas\Ngampus.jpeg" alt="Ngampus">
+                    <figcaption>Kuliah di Universitas Pamulang</figcaption>
+                </figure>
+                <figure>
+                    <img src="c:\Users\dell\OneDrive\Desktop\pemrograman web 1 tugas\mengajar ngaji.png" alt="Mengajar Ngaji">
+                    <figcaption>Mengajar Ngaji di Sore Hari</figcaption>
+                </figure>
+                <figure>
+                    <img src="c:\Users\dell\OneDrive\Desktop\pemrograman web 1 tugas\Ngajar Silat.jpg" alt="mengajar Silat">
+                    <figcaption>mengajar Silat di Malam Hari</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="video" class="content-card">
+            <h2>Video Kantor Impian</h2>
+            <p>Video Kantor Impian Yang Ingin Saya Miliki</p>
+            <div class="video-container">
+                <iframe src="c:\Users\dell\OneDrive\Desktop\pemrograman web 1 tugas\Kantor Impian.mp4" title="Video Kantor Impian" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="audio" class="content-card">
+            <h2>Surah Favorite</h2>
+            <p>Rekaman Surah Al-A'la</p>
+            <div class="audio-container">
+                <div class="audio-icon">🎤</div>
+                <div>
+                    <h3>Rekaman Oleh Salim Bahanan</h3>
+                    <p>Durasi: 2:03 menit.</p>
+                </div>
+
+                <audio controls style="flex-shrink: 0;">
+                    <source src="c:\Users\dell\OneDrive\Desktop\pemrograman web 1 tugas\Surah Al A'la - Salim Bahanan - Quran Hadees.mp3" type="audio/wav">
+                    Browser Anda tidak mendukung audio.
+                </audio>
+            </div>
+        </section>
+
+        <section id="links" class="content-card">
+            <h2>Tautan Penting</h2>
+            <div class="links">
+                <a href="https://www.youtube.com/@Theoderick_" target="_blank" rel="noopener noreferrer" class="link-item">
+                    <div class="audio-icon" style="background: #ff0000;">▶️</div>
+                    <div>
+                        <h3>Channel YouTube yang Sering Saya Kunjungi</h3>
+                        <p>Channel YouTube Theoderick.</p>
+                    </div>
+                </a>
+                <a href="https://fictionzone.net/" target="_blank" rel="noopener noreferrer" class="link-item">
+                    <div class="audio-icon" style="background: #10b981;">📖</div>
+                    <div>
+                        <h3>Tempat Saya Sering Membaca Fiction</h3>
+                        <p>Baca di Fiction Zone.</p>
+                    </div>
+                </a>
+                <a href="coba.html" target="_blank" rel="noopener noreferrer" class="link-item">
+                    <div class="audio-icon" style="background: #1da1f2;">🌐</div>
+                    <div>
+                        <h3>Web Pribadi Lain</h3>
+                        <p>Program Riset.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+       window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+            const sectionTop = section.offsetTop - 80;
+            const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+                }
+               });
+
+            navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+                }
+                });
+                });
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Website Pribadi Saya.</p>
+            <p>Dibuat Untuk Tugas Pertemuan 3.</p>
+        </div>
+    </footer>
+</body>
+</html>
